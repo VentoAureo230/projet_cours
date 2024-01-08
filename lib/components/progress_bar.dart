@@ -34,6 +34,7 @@ class _ProgressBarState extends State<ProgressBar> {
           children: [
             Text(widget.title),
             Text(widget.description),
+            const SizedBox(height: 10,),
             SizedBox(
               height: 50,
               child: Column(children: [
@@ -43,6 +44,7 @@ class _ProgressBarState extends State<ProgressBar> {
                     borderRadius: BorderRadius.circular(10)
                   ),
                   child: FAProgressBar(
+                    animatedDuration: const Duration(milliseconds: 2500),
                     displayTextStyle: const TextStyle(color: Colors.black, fontWeight: FontWeight.w500),
                     changeColorValue: 100,
                     currentValue: widget.percentage.toDouble(),
