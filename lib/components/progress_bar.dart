@@ -37,14 +37,22 @@ class _ProgressBarState extends State<ProgressBar> {
             SizedBox(
               height: 50,
               child: Column(children: [
-                FAProgressBar(
-                  currentValue: widget.percentage.toDouble(),
-                  displayText: ' %',
-                  progressGradient: LinearGradient(colors: [
-                    Colors.red.withOpacity(0.75),
-                    Colors.orange.withOpacity(0.75),
-                    Colors.green.withOpacity(0.75),
-                  ]),
+                Container(
+                  decoration: BoxDecoration(
+                    border: Border.all(color: Colors.black, width: 2.0),
+                    borderRadius: BorderRadius.circular(10)
+                  ),
+                  child: FAProgressBar(
+                    displayTextStyle: const TextStyle(color: Colors.black, fontWeight: FontWeight.w500),
+                    changeColorValue: 100,
+                    currentValue: widget.percentage.toDouble(),
+                    displayText: ' %',
+                    progressGradient: LinearGradient(colors: [
+                      Colors.red.withOpacity(0.75),
+                      Colors.orange.withOpacity(0.75),
+                      Colors.green.withOpacity(0.75),
+                    ]),
+                  ),
                 )
               ]),
             ),
