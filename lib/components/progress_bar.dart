@@ -39,7 +39,7 @@ class _ProgressBarState extends State<ProgressBar> {
               child: Column(children: [
                 FAProgressBar(
                   currentValue: widget.percentage.toDouble(),
-                  displayText: '%',
+                  displayText: ' %',
                   progressGradient: LinearGradient(colors: [
                     Colors.red.withOpacity(0.75),
                     Colors.orange.withOpacity(0.75),
