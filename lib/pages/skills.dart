@@ -45,31 +45,36 @@ class _SkillsPageState extends State<SkillsPage> {
           ),
           Expanded(
             child: ListView(
-              children: const [
+              children: [
                 ProgressBar(
                   percentage: 10,
                   title: 'C1',
                   description:
                       'Maitriser le maniement du véhicule dans un traffic faible',
+                  editData: () {
+                    
+                  },
                 ),
                 ProgressBar(
                   percentage: 12,
                   title: 'C2',
                   description:
                       'Appréhender la route et circuler dans des conditions normales',
+                  editData: () {},
                 ),
                 ProgressBar(
                   percentage: 79,
                   title: 'C3',
                   description:
                       'Circuler dans des conditions difficiles et partager la routes avec les ...',
+                  editData: () {},
                 ),
                 ProgressBar(
                   percentage: 45,
                   title: 'C4',
                   description: 'Effectuer les manoeuvres',
+                  editData: () {},
                 ),
-                
               ],
             ),
           ),
