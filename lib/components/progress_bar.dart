@@ -10,7 +10,9 @@ class ProgressBar extends StatefulWidget {
       {super.key,
       required this.percentage,
       required this.title,
-      required this.description, required this.editData});
+      required this.description,
+      required this.editData
+      });
 
   @override
   State<ProgressBar> createState() => _ProgressBarState();
